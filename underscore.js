@@ -597,7 +597,8 @@
 
   // Zip together multiple lists into a single array -- elements that share
   // an index go together.
-  _.zip = restArgs(_.unzip);
+  // Aliased as `merge`
+  _.zip = _.merge = restArgs(_.unzip);
 
   // Converts lists into objects. Pass either a single array of `[key, value]`
   // pairs, or two parallel arrays of the same length -- one of keys, and one of
